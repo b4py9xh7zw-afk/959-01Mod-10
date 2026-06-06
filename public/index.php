@@ -38,6 +38,18 @@ $routes = [
     'licenses/view' => ['controller' => 'LicenseController', 'action' => 'view'],
     'licenses/update' => ['controller' => 'LicenseController', 'action' => 'update'],
     'licenses/delete' => ['controller' => 'LicenseController', 'action' => 'delete'],
+    'invoice/info' => ['controller' => 'InvoiceController', 'action' => 'invoiceInfo'],
+    'invoice/orders' => ['controller' => 'InvoiceController', 'action' => 'orders'],
+    'invoice/order/create' => ['controller' => 'InvoiceController', 'action' => 'orderCreate'],
+    'invoice/order/generate-invoice' => ['controller' => 'InvoiceController', 'action' => 'generateInvoiceForOrder'],
+    'invoice/applications' => ['controller' => 'InvoiceController', 'action' => 'applications'],
+    'invoice/application/view' => ['controller' => 'InvoiceController', 'action' => 'applicationView'],
+    'invoice/application/approve' => ['controller' => 'InvoiceController', 'action' => 'applicationApprove'],
+    'invoice/application/reject' => ['controller' => 'InvoiceController', 'action' => 'applicationReject'],
+    'invoice/application/resubmit' => ['controller' => 'InvoiceController', 'action' => 'applicationResubmit'],
+    'invoice/application/issue' => ['controller' => 'InvoiceController', 'action' => 'applicationIssue'],
+    'invoice/invoices' => ['controller' => 'InvoiceController', 'action' => 'invoices'],
+    'invoice/view' => ['controller' => 'InvoiceController', 'action' => 'invoiceView'],
 ];
 
 // Default route

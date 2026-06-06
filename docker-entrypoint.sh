@@ -19,5 +19,8 @@ php app/scripts/seed_users.php || true
 echo "Seeding sample licenses..."
 php app/scripts/seed_licenses.php || true
 
+echo "Seeding invoice data..."
+php app/scripts/seed_invoice_data.php || true
+
 echo "Starting PHP-FPM..."
 exec php-fpm
